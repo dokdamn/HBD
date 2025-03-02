@@ -113,10 +113,10 @@ body {
 
 .six .hat {
   position: absolute;
-  top: -8%; /* MOVE IT UP */
-  left: 65%; /* MOVE IT TO THE RIGHT RELATIVE TO IMAGE */
-  transform: translateX(-50%); /* CENTER IT */
-  width: 15vw; /* MAKE IT SCALE WITH SCREEN SIZE */
+  top: -12%; /* MOVED HIGHER */
+  left: 65%;
+  transform: translateX(-50%);
+  width: 15vw;
   z-index: 10;
 }
 
@@ -175,20 +175,12 @@ body {
   z-index: 3;
 }
 
-/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* MEDIA QUERIES FOR SMALLER SCREENS */
 @media screen and (max-width: 768px) {
   .six .hat {
-    top: -5%;
-    left: 55%; /* ADJUST FOR SMALLER SCREENS */
-    width: 20vw; /* MAKE IT BIGGER FOR SMALLER SCREENS */
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .six .hat {
-    left: 50%; /* CENTER MORE ON SMALLER SCREENS */
-    top: -10%;
-    width: 22vw;
+    top: -10%; /* ADJUST FOR TABLETS */
+    left: 55%;
+    width: 20vw;
   }
 
   .container {
@@ -223,5 +215,13 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .six .hat {
+    top: -15%; /* MOVED HIGHER ON SMALL SCREENS */
+    left: 50%;
+    width: 22vw;
   }
 }
