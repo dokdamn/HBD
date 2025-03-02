@@ -73,3 +73,21 @@ const animationTimeline = () => {
         event.stopPropagation(); // Stops clicks from triggering unwanted actions
     });
 };
+
+// ✅ FIXED HAT POSITION FUNCTION
+document.addEventListener("DOMContentLoaded", function () {
+    const hat = document.querySelector(".six .hat");
+
+    function adjustHatPosition() {
+        if (window.innerWidth <= 500) {
+            hat.style.top = "-30%"; // HIGHER ON SMALL SCREENS
+        } else if (window.innerWidth <= 768) {
+            hat.style.top = "-25%"; // HIGHER ON TABLETS
+        } else {
+            hat.style.top = "-20%"; // DEFAULT DESKTOP POSITION
+        }
+    }
+
+    adjustHatPosition();
+    window.addEventListener("resize", adjustHatPosition);
+});
