@@ -112,9 +112,9 @@ body {
 }
 
 .six .hat {
-  position: absolute;
-  top: -25% !important; /* MOVED HIGHER */
-  left: 65%;
+  position: absolute !important;
+  top: -20% !important; /* HIGHER */
+  left: 50% !important;
   transform: translateX(-50%);
   width: 15vw;
   z-index: 10;
@@ -178,50 +178,50 @@ body {
 /* MEDIA QUERIES FOR SMALLER SCREENS */
 @media screen and (max-width: 768px) {
   .six .hat {
-    top: -22% !important; /* ADJUST FOR TABLETS */
-    left: 55%;
-    width: 20vw;
-  }
-
-  .container {
-    width: 90%;
-  }
-
-  .four .text-box {
-    width: 90%;
-  }
-
-  .text-box .fake-btn {
-    bottom: -38px;
-    right: 5px;
-  }
-
-  .idea-5 span {
-    display: block;
-  }
-
-  .idea-6 span {
-    font-size: 10rem;
-  }
-
-  .wish-hbd {
-    font-size: 2.2em;
-  }
-
-  .wish h5 {
-    font-size: 1.4rem;
-  }
-
-  .nine p {
-    font-size: 1.5rem;
-    font-weight: lighter;
+    top: -25% !important; /* HIGHER ON TABLETS */
+    left: 50%;
+    width: 18vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   .six .hat {
-    top: -22% !important; /* MOVED HIGHER ON SMALL SCREENS */
+    top: -30% !important; /* EVEN HIGHER ON SMALL SCREENS */
     left: 50%;
-    width: 22vw;
+    width: 20vw;
   }
+}
+
+.container {
+  width: 90%;
+}
+
+.four .text-box {
+  width: 90%;
+}
+
+.text-box .fake-btn {
+  bottom: -38px;
+  right: 5px;
+}
+
+.idea-5 span {
+  display: block;
+}
+
+.idea-6 span {
+  font-size: 10rem;
+}
+
+.wish-hbd {
+  font-size: 2.2em;
+}
+
+.wish h5 {
+  font-size: 1.4rem;
+}
+
+.nine p {
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
