@@ -178,7 +178,7 @@ body {
 /* MEDIA QUERIES FOR SMALLER SCREENS */
 @media screen and (max-width: 768px) {
   .six .hat {
-    top: -10%; /* ADJUST FOR TABLETS */
+    top: -22% !important; /* ADJUST FOR TABLETS */
     left: 55%;
     width: 20vw;
   }
@@ -220,7 +220,7 @@ body {
 
 @media screen and (max-width: 500px) {
   .six .hat {
-    top: -15%; /* MOVED HIGHER ON SMALL SCREENS */
+    top: -22% !important; /* MOVED HIGHER ON SMALL SCREENS */
     left: 50%;
     width: 22vw;
   }
