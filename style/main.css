@@ -113,7 +113,7 @@ body {
 
 .six .hat {
   position: absolute;
-  top: -12%; /* MOVED HIGHER */
+  top: -20%; /* MOVED HIGHER */
   left: 65%;
   transform: translateX(-50%);
   width: 15vw;
