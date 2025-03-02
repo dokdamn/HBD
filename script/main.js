@@ -72,14 +72,4 @@ const animationTimeline = () => {
     document.body.addEventListener("click", (event) => {
         event.stopPropagation(); // Stops clicks from triggering unwanted actions
     });
-
-    // ✅ MOVE THE HAT AFTER ANIMATION FINISHES
-    setTimeout(() => {
-        let hat = document.querySelector(".hat");
-        if (hat) {
-            hat.style.left = "660px"; // Move it far to the right
-            hat.style.top = "-110px"; // Move it up more
-            hat.style.transform = "none"; // Reset GSAP transformations
-        }
-    }, 3500); // Runs after animation ends
 };
