@@ -118,6 +118,8 @@ body {
     left: 300px;  /* Move RIGHT */
     width: 80px;  /* Adjust size */
 	z-index: 10;
+        transform: translateX(-50%); /* CENTER IT BASED ON SIZE */
+    width: 15vw;
 }
 
 
@@ -278,8 +280,9 @@ body {
   }
 
   .six .hat {
-    /* top: -20px; */
-    width: 50px;
+        top: -5%;  /* MOVE IT CLOSER TO HEAD */
+        left: 60%;  /* ADJUST FOR SMALLER SCREEN */
+        width: 20vw; 
   }
 
   .wish-hbd {
